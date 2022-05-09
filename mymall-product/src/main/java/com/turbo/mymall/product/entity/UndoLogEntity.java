@@ -37,9 +37,9 @@ public class UndoLogEntity implements Serializable {
 	 */
 	private String context;
 	/**
-	 * 
+	 * 数据库是longblob，java里就用byte接收
 	 */
-	private Longblob rollbackInfo;
+	private byte rollbackInfo;
 	/**
 	 * 
 	 */

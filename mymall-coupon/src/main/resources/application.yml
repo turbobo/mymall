@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: rootroot
+    url: jdbc:mysql://192.168.0.222:3306/mymall_sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml   #classpath*表示扫描本包和引用包位置
+  global-config:
+    db-config:
+      id-type: auto   #配置实体类的主键自增
+server:
+  port: 7000
